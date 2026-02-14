@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>С Днём Рождения, Карина! ❤️</title>
+    <title>С Днём Рождения, дорогая моя! ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,7 +29,6 @@
             position: relative;
         }
 
-        /* Floating hearts background */
         .hearts-container {
             position: fixed;
             top: 0;
@@ -65,7 +64,6 @@
             }
         }
 
-        /* Main container */
         .container {
             position: relative;
             z-index: 2;
@@ -74,7 +72,6 @@
             padding: 40px 20px;
         }
 
-        /* Header section */
         .header {
             text-align: center;
             padding: 60px 0;
@@ -99,7 +96,7 @@
             animation: fadeIn 2s ease-out 0.8s forwards;
         }
 
-        /* Card sections */
+
         .card {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
@@ -144,7 +141,6 @@
             text-align: center;
         }
 
-        /* Letter section */
         .letter {
             background: linear-gradient(to bottom, #FFFAF5, #FFF0E6);
             padding: 40px;
@@ -177,7 +173,6 @@
             font-family: 'Playfair Display', serif;
         }
 
-        /* Promise list */
         .promises {
             list-style: none;
             padding: 0;
@@ -203,7 +198,7 @@
             margin-right: 10px;
         }
 
-        /* Button */
+
         .love-button {
             display: block;
             margin: 50px auto;
@@ -304,7 +299,7 @@
             transform: scale(1.05);
         }
 
-        /* Animations */
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
@@ -339,7 +334,7 @@
             }
         }
 
-        /* Responsive */
+ 
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 3em;
@@ -360,10 +355,10 @@
     </style>
 </head>
 <body>
-    <!-- Floating hearts -->
+  
     <div class="hearts-container" id="heartsContainer"></div>
 
-    <!-- Main content -->
+
     <div class="container">
         <header class="header">
             <h1>Карина</h1>
@@ -406,7 +401,7 @@
         </button>
     </div>
 
-    <!-- Modal -->
+
     <div class="modal" id="loveModal">
         <div class="modal-content">
             <h2>Я люблю тебя! ❤️</h2>
@@ -418,7 +413,7 @@
     </div>
 
     <script>
-        // Create floating hearts
+
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
@@ -435,20 +430,20 @@
             }, 10000);
         }
 
-        // Generate hearts continuously
+  
         setInterval(createHeart, 500);
 
-        // Initial hearts
+   
         for (let i = 0; i < 15; i++) {
             setTimeout(createHeart, i * 200);
         }
 
-        // Modal functions
+  
         function showLove() {
             const modal = document.getElementById('loveModal');
             modal.style.display = 'flex';
             
-            // Create burst of hearts
+  
             for (let i = 0; i < 30; i++) {
                 setTimeout(createHeart, i * 50);
             }
@@ -459,7 +454,7 @@
             modal.style.display = 'none';
         }
 
-        // Close modal on outside click
+
         window.onclick = function(event) {
             const modal = document.getElementById('loveModal');
             if (event.target === modal) {
@@ -467,7 +462,7 @@
             }
         }
 
-        // Add sparkle cursor effect
+
         document.addEventListener('mousemove', function(e) {
             if (Math.random() > 0.9) {
                 const sparkle = document.createElement('div');
